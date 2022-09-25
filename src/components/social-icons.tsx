@@ -16,6 +16,18 @@ export const SocialIcons = ({
     role="dialog"
     aria-modal="true"
     className="rws-container web-share-fade-in-up"
+    onClick={e=>{
+      e.preventDefault()
+      e.stopPropagation()
+    }}
+    onBlur={e=>{
+      e.preventDefault()
+      e.stopPropagation()
+    }}
+    onMouseDown={e=>{
+      e.preventDefault()
+      e.stopPropagation()
+    }}
   >
     <Header title={data.title} />
     <div className="rws-icons">
